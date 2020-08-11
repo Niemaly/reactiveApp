@@ -13,7 +13,9 @@ class ReactiveApiApplicationTests {
 		Flux.just("Jacek", "Fiora", "Krzysztof", "Franciszek", "Paweł", "Justyna", "Ewelina", "Nadia", "Grzegorz", "Wacław", "Iwona", "Dominika").
 				filter(element-> element.startsWith("J")).
 		subscribe(System.out::println);                                     // it takes many elements
-		//   Mono.just(""); // it takes only one element
+
+
+        //   Mono.just("Jacek"); // it takes only one element
 
 	}
 
